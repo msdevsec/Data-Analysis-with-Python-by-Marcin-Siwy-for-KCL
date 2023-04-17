@@ -1,10 +1,9 @@
-import matplotlib.pyplot as plot
-fig = plot.figure()
-ax = fig.add_axes([0,0,1,1])
-Color = ['Brown', 'Yellow', 'Red', 'Orange', 'Blue', 'Green']
-Frequency = [12,10,9,6,3,5]
-plot.title('Bar Graph for M&M colour')
-plot.xlabel('Color')
-plot.ylabel('Frequency')
-ax.bar(Color,Frequency)
-plot.show() 
+import pandas as pd
+#read the CSV file with the dataset
+data = pd.read.csv('data.csv')
+
+#Print only the first 10k rowns for this research purpose
+print(data.head(10000)
+     
+#check the data types of the colomns
+print(data.dtypes)
