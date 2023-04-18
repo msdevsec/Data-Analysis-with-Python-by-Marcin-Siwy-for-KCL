@@ -18,3 +18,6 @@ plt.ylabel('Count')
 plt.axvline(mode_strength[0], color='r', linestyle='dashed', linewidth=1)
 plt.text(mode_strength[0], max(password_strengths.values)*0.8, 'Mode: {}'.format(mode_strength[0]))
 plt.show()
+
+#print the mode value
+print("The mode password strength is:", mode_strength[0])
