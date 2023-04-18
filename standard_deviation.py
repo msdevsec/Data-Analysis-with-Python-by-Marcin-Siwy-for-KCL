@@ -1,13 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Read the dataset into a pandas dataframe
+# Read the dataset
 df = pd.read_csv('data.csv')
 
 # Calculate the standard deviation of the strength column
 std_dev = df['strength'].std()
 
-# Plot a histogram to visualize the distribution of password strengths
+# Plot a graph toisualise results
 plt.hist(df['strength'], bins=3, alpha=0.5)
 plt.axvline(df['strength'].mean(), color='blue', linestyle='dashed', linewidth=1)
 plt.axvline(df['strength'].mean()+std_dev, color='red', linestyle='dashed', linewidth=1)
